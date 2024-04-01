@@ -1,8 +1,7 @@
+
 # kato-elixir-capilar.com
 
-# Kato Elixir Capilar
-
-[![Kato Elixir Capilar Logo]([https://github.com/ktperez/kato-grow-elixir-capilar/assets/87502202/cd9748d0-ee13-4085-bcfd-8aee205ece34](https://github.com/ktperez/kato-elixir-capilar.com/blob/main/KATO.png?raw=true))](https://github.com/ktperez/kato-elixir-capilar.com/blob/main/KATO.png?raw=true)
+[![Kato Elixir Capilar Logo](https://github.com/ktperez/kato-elixir-capilar.com/blob/main/KATO.png?raw=true)](https://github.com/ktperez/kato-elixir-capilar.com/blob/main/KATO.png?raw=true)
 
 ## Descripción
 "Kato Elixir Capilar" es un proyecto dedicado al cuidado del cabello tanto para hombres como para mujeres. Nuestra fórmula única está diseñada para transformar tu cabello, brindándote un aspecto fresco y vibrante.
@@ -21,8 +20,7 @@
 2. Abre el archivo `index.html` en tu navegador.
 
 ## Uso
--interactua con el chat bot
-
+- Interactúa con el chat bot.
 
 ## Tecnologías Utilizadas
 - HTML
@@ -41,12 +39,9 @@ Las contribuciones son bienvenidas. Si deseas mejorar este proyecto, por favor s
 4. Haz push a la rama (`git push origin nueva-funcionalidad`).
 5. Crea un Pull Request.
 
-
-
 ## Créditos
-- Este proyecto fue creado por Katherine Perez(https://github.com/ktperez).
-- Logo diseñado por Otoniel Orozco https://www.linkedin.com/in/otoniel-orozcol/
+- Este proyecto fue creado por [Katherine Perez](https://github.com/ktperez).
+- Logo diseñado por [Otoniel Orozco](https://www.linkedin.com/in/otoniel-orozcol/).
 
 ## Contacto
 Para más información, puedes contactarnos en katoelixircapilar@gmail.com
-
