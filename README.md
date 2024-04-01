@@ -44,7 +44,7 @@ Las contribuciones son bienvenidas. Si deseas mejorar este proyecto, por favor s
 
 
 ## Créditos
-- Este proyecto fue creado por Katherine Perez[ (https://github.com/tu_usuario)](https://github.com/ktperez).
+- Este proyecto fue creado por Katherine Perez(https://github.com/ktperez).
 - Logo diseñado por Otoniel Orozco https://www.linkedin.com/in/otoniel-orozcol/
 
 ## Contacto
