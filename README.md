@@ -2,7 +2,7 @@
 
 # Kato Elixir Capilar
 
-![Kato Elixir Capilar Logo]([https://github.com/ktperez/kato-grow-elixir-capilar/assets/87502202/cd9748d0-ee13-4085-bcfd-8aee205ece34](https://github.com/ktperez/kato-elixir-capilar.com/blob/main/KATO.png?raw=true))
+[![Kato Elixir Capilar Logo]([https://github.com/ktperez/kato-grow-elixir-capilar/assets/87502202/cd9748d0-ee13-4085-bcfd-8aee205ece34](https://github.com/ktperez/kato-elixir-capilar.com/blob/main/KATO.png?raw=true))](https://github.com/ktperez/kato-elixir-capilar.com/blob/main/KATO.png?raw=true)
 
 ## Descripción
 "Kato Elixir Capilar" es un proyecto dedicado al cuidado del cabello tanto para hombres como para mujeres. Nuestra fórmula única está diseñada para transformar tu cabello, brindándote un aspecto fresco y vibrante.
