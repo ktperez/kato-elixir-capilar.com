@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat con Kato</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="chat.css">
+    <!-- Estilos del carrusel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <!-- Iconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container-fluid main-container">
+        <!-- Encabezado del Chat -->
+        <div class="row header-row">
+            <div class="col text-center">
+                <div class="chat-ball" id="chat-ball">
+                    <div class="chat-icon">
+                        <img src="KATO.png" alt="Chat Icon">
+                    </div>
+                </div>
+                <div class="chat-popup" id="myForm">
+                    <div class="container">
+                        <button type="button" class="close" id="close-btn">&times;</button>
+                    </div>
+                    <div class="chat-container mt-4" id="chat-container">
+                        <div class="chat-box" id="chat-box"></div>
+                    </div>
+                    <input type="text" class="form-control" id="user-input" placeholder="Escribe tu mensaje...">
+                    <div class="row mt-3">
+                        <div class="col">
+                            <button class="btn btn-primary custom-send-btn" id="send-btn">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carrusel -->
+        <div class="row">
+            <div class="col">
+                <div class="carousel-container">
+                    <div class="panel">
+                        <h1 class="carousel-title">Chatea con nosotros</h1>
+                        <div class="carousel">
+                            <div class="slide">
+                                <img src="1.png" alt="Chat 1">
+                                <h3>Recomendación del día</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i>
+                            </div>
+                            <div class="slide">
+                                <img src="2.png" alt="Chat 2">
+                                <h3>Frase del día</h3>
+                                <p>Nullam tempus massa vitae elit fermentum, nec accumsan neque congue.</p>
+                                <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="far fa-heart"></i>
+                            </div>
+                            <div class="slide">
+                                <img src="3.png" alt="Chat 3">
+                                <h3>Cuidado Capilar</h3>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                                <i class="fas fa-check-circle"></i> <i class="fas fa-check-circle"></i> <i class="fas fa-check-circle"></i> <i class="fas fa-check-circle"></i> <i class="far fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Información adicional -->
+        <div class="row mt-5">
+            <div class="col text-center">
+                <h2>Más información sobre Kato:</h2>
+                <p>Visita nuestra página web <a href="https://www.kato.com" target="_blank" style="color: #d3b36e;">www.kato.com</a></p>
+                <p>Síguenos en nuestras redes sociales:</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/katoelixircapilar/"><i class="fab fa-instagram-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Chat JS -->
+    <script src="chat.js"></script>
+    <!-- Carrusel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="carrusel.js"></script>
+</body>
+</html>
