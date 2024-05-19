@@ -29,6 +29,8 @@
 - Bootstrap
 - jQuery
 - FontAwesome
+- PHP
+-Base de datos MySQL
 
 ## Contribuciones
 Las contribuciones son bienvenidas. Si deseas mejorar este proyecto, por favor sigue los siguientes pasos:
