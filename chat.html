@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <?php include 'includes/db_connection.php'; ?>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat con Kato</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="./CSS/chat.css">
+    <!-- Estilos del carrusel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <!-- Iconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container-fluid main-container">
+        <!-- Encabezado del Chat -->
+        <div class="row header-row">
+            <div class="col text-center">
+                <h2 class="chat-with-us">CHATEA CON NOSOTROS</h2>
+                <div class="chat-ball" id="chat-ball">
+                    <div class="chat-icon">
+                        <img src="./img/KATO.png" alt="Chat Icon">
+                    </div>
+                </div>
+                <!-- Chat Popup -->
+                <div class="chat-popup" id="myForm">
+                    <div class="container">
+                        <button type="button" class="close" id="close-btn">&times;</button>
+                    </div>
+                    
+                    <!-- Formulario de información del cliente -->
+                    <div id="client-form" class="mt-4">
+                        <h3>Información del Cliente</h3>
+                        <form id="client-info-form">
+                            <div class="form-group">
+                                <label for="client-name">Nombre:</label>
+                                <input type="text" class="form-control" id="client-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="client-phone">Teléfono:</label>
+                                <input type="text" class="form-control" id="client-phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="client-city">Ciudad:</label>
+                                <input type="text" class="form-control" id="client-city" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary custom-send-btn">Iniciar Chat</button>
+                        </form>
+                    </div>
+                    
+                    
+                    <!-- Contenedor del chat (oculto por defecto) -->
+                    <div class="chat-container mt-4" id="chat-container" style="display: none;">
+                        <div class="chat-box" id="chat-box">
+                            <h3 class="chat-with-kato">Chat con Kato</h3>
+                            <p class="chat-intro">¡Hola! Soy KATO 🙋🏻‍♀️, tu asistente virtual y estoy aquí para ayudarte. 😃</p>
+                            <img src="./img/imagen.jpg" alt="Ana Avatar" class="assistant-image">
+                            <p class="chat-intro">Dime, ¿qué quieres hacer? Selecciona una opción del menú 👇:</p>
+                            <!-- Opciones del menú -->
+                            <button class="menu-option" data-option="1">1. Compra del Elixir Capilar 🛒</button><br>
+                            <button class="menu-option" data-option="2">2. Recomendaciones Capilares 💇‍♂️💛</button><br>
+                            <button class="menu-option" data-option="3">3. Modo de uso 💆‍♂️</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Ventana emergente para confirmar la redirección a WhatsApp -->
+                    <div class="modal" id="confirmationModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <!-- Encabezado de la ventana emergente -->
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Confirmación</h5>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Cuerpo de la ventana emergente -->
+                                <div class="modal-body">
+                                    ¿Estás seguro de que quieres ir a WhatsApp?
+                                </div>
+                                <!-- Pie de la ventana emergente -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: #FF0000;">Cancelar</button>
+                                    <button type="button" class="btn btn-primary" id="confirmRedirect" style="background-color: #9B7D3A;">Sí, ir a WhatsApp</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" id="user-input" placeholder="Escribe el número de tu opción..." >
+                    <div class="row mt-3">
+                        <div class="col">
+                            <button class="btn btn-primary custom-send-btn" id="send-btn" >Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Carrusel -->
+        <div class="row">
+            <div class="col">
+                <div class="carousel-container">
+                    <div class="panel">
+                        <h1 class="carousel-title"></h1>
+                        <div class="carousel">
+                            <div class="slide">
+                                <video autoplay muted loop>
+                                    <source src="./img/1.mp4" type="video/mp4">
+                                    Tu navegador no soporta la etiqueta de video.
+                                </video>
+                                <h3>Conoce la magia de natural, en tu hebra capilar 💆‍♂️</h3>
+                                <p></p>
+                                <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i>
+                            </div>
+                            <div class="slide">
+                                <video autoplay muted loop>
+                                    <source src="./img/2.mp4" type="video/mp4">
+                                    Tu navegador no soporta la etiqueta de video.
+                                </video>
+                                <h3>Producto 100% Organico 🌿</h3>
+                                <p></p>
+                                <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="far fa-heart"></i>
+                            </div>
+                            <div class="slide">
+                                <video autoplay muted loop>
+                                    <source src="./img/3.mp4" type="video/mp4">
+                                    Tu navegador no soporta la etiqueta de video.
+                                </video>
+                                <h3>Lo natural siempre es mejor 🌿</h3>
+                                <p></p>
+                                <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="far fa-heart"></i>
+                            </div>
+                            <div class="slide">
+                                <video autoplay muted loop>
+                                    <source src="./img/4.mp4" type="video/mp4">
+                                    Tu navegador no soporta la etiqueta de video.
+                                </video>
+                                <h3>Cuidado Capilar💛</h3>
+                                <p></p>
+                                <i class="fas fa-check-circle"></i> <i class="fas fa-check-circle"></i> <i class="fas fa-check-circle"></i> <i class="fas fa-check-circle"></i> <i class="far fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Información adicional -->
+        <div class="row mt-5">
+            <div class="col text-center">
+                <p>¡Síguenos en nuestras redes sociales!</p>
+                <div class="social-icons">
+                    <a href="https://wa.link/frfgbk" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/katoelixircapilar/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Chat JS -->
+    <script src="./js/chat.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Carrusel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./js/carrusel.js"></script>
+</body>
+</html>
